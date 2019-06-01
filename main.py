@@ -231,9 +231,9 @@ def run_one():
         robust_ms   = [_model]
         robust_ps   = [hps]
         robust_atks = [[attack_params]]
-        #  plots.plot_robust_accuracy.plot("test_robust_acc", None, None, ms, ps)
-        plots.plot_accuracy_under_attack.plot("test_acc_under_atk",
-                robust_ms, robust_ps, robust_atks, x_ticks=[x/10 for x in range(1,16)])
+        plots.plot_robust_accuracy.plot("test_robust_acc", None, None, ms, ps)
+        #plots.plot_accuracy_under_attack.plot("test_acc_under_atk",
+        #        robust_ms, robust_ps, robust_atks, x_ticks=[x/10 for x in range(1,16)])
         #  plots.plot_robust_precision_under_attack.plot("test_robust_prec_under_atk",
                 #  ms, ps, atks,
                 #  robust_ms, robust_ps, robust_atks,
