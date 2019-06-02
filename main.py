@@ -225,12 +225,12 @@ def run_one():
                     attack_params,
                     dev=dev)
     elif FLAGS.mode == 'plot':
-        ms   = []
-        ps   = []
-        atks = [[]]
-        robust_ms   = [_model]
-        robust_ps   = [hps]
-        robust_atks = [[attack_params]]
+        ms   = [_model]
+        ps   = [hps]
+        atks = [[attack_params]]
+        #robust_ms   = [_model]
+        #robust_ps   = [hps]
+        #robust_atks = [[attack_params]]
         plots.plot_robust_accuracy.plot("test_robust_acc", None, None, ms, ps)
         #plots.plot_accuracy_under_attack.plot("test_acc_under_atk",
         #        robust_ms, robust_ps, robust_atks, x_ticks=[x/10 for x in range(1,16)])
