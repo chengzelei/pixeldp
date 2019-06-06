@@ -116,7 +116,7 @@ def run_one():
     compute_robustness = True
 
     # See doc in ./models/params.py
-    L = 0.1
+    L = 0.03
     hps = models.params.HParams(
             name_prefix="",
             batch_size=batch_size,
